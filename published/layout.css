@@ -1,0 +1,36 @@
+:root {
+  --text-color: #2a2f33;
+  --icon-color: #2a2f33;
+  --background-color: #fffcf2;
+  --accent-color: #eb5e28;
+}
+
+@font-face {
+  font-family: 'NotoSansKR-Black';
+  src: url('./assets/fonts/NotoSansKR-Black.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansKR-Light';
+  src: url('./assets/fonts/NotoSansKR-Light.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'NotoSansKR-Light';
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}

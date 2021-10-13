@@ -1,0 +1,150 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s ease;
+  background-color: var(--background-color);
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  top: -48px;
+}
+
+.header__logo {
+  padding: 8px 12px;
+  font-size: 24px;
+}
+
+.header__logo i {
+  color: var(--accent-color);
+}
+
+.header__icons {
+  padding: 8px 12px;
+  font-size: 24px;
+}
+
+.header__icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.contents {
+  position: relative;
+  top: 48px;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.contents .compare {
+  margin-top: 10px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.contents .compare:first-child {
+  margin-top: 0;
+}
+
+.contents .compare .imgs {
+  display: flex;
+}
+
+.contents .compare .imgs div {
+  width: 50%;
+  height: 180px;
+}
+
+.contents .compare .imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+.contents .compare .description {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.contents .compare .description .profile {
+  margin-top: 5px;
+}
+
+.contents .compare .description img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.contents .compare .description div {
+  padding: 4px;
+}
+
+.contents .compare .description div h3 {
+  line-height: 110%;
+}
+
+.contents .compare .description div p {
+  opacity: 0.5;
+}
+
+.contents .compare .description div p span {
+  color: var(--accent-color);
+}
+
+.bottom-navbar {
+  width: 100%;
+  z-index: 1;
+  background-color: var(--background-color);
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-navbar ul {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.bottom-navbar ul li {
+  flex: 1;
+  text-align: center;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-navbar ul li:first-child {
+  color: var(--accent-color);
+}
+
+.bottom-navbar ul li span {
+  font-size: 10px;
+}
+
+.bottom-navbar ul li img {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 25px;
+}
